@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "QNA-FORUM": {
+    "DOUBT-FORUM": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -23,9 +23,23 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+             
+              
+              "src/styles.css",
+              
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              
+              "node_modules/font-awesome/css/font-awesome.min.css",
+              
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.js"
+             
+
+            ],
             "es5BrowserSupport": true
           },
           "configurations": {
@@ -58,18 +72,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "QNA-FORUM:build"
+            "browserTarget": "DOUBT-FORUM:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "QNA-FORUM:build:production"
+              "browserTarget": "DOUBT-FORUM:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "QNA-FORUM:build"
+            "browserTarget": "DOUBT-FORUM:build"
           }
         },
         "test": {
@@ -80,6 +94,7 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": [],
@@ -112,11 +127,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "QNA-FORUM:serve"
+            "devServerTarget": "DOUBT-FORUM:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "QNA-FORUM:serve:production"
+              "devServerTarget": "DOUBT-FORUM:serve:production"
             }
           }
         },
@@ -132,5 +147,5 @@
       }
     }
   },
-  "defaultProject": "QNA-FORUM"
+  "defaultProject": "DOUBT-FORUM"
 }

@@ -1,0 +1,61 @@
+
+  
+
+  <Br/>
+  <Br/>
+
+<div class="container">
+  
+  <!-- <h3 class="text-secondary" >&nbsp;&nbsp; &nbsp;{{question}}</h3  >
+    <Br/> -->
+
+
+<!-- <div *ngFor="let mod of ans">
+<ul><li>
+  <p class="text-primary">&nbsp;{{mod.answer}}</p
+    >
+</li>
+</ul>
+</div> -->
+
+
+<div class="card" style="margin:30px; margin:140px; box-shadow: 0 0 5px #00000045;">
+  <div class="card-header">
+    <b><span style="color:#d9534f">Question: {{question}}</span></b>
+  </div>
+  <div class="card-body">
+    <h6>Answers:</h6>
+    <div *ngFor="let mod of ans">
+      <ul><li>
+        <p class="text-secondary">&nbsp;{{mod.answer}}</p
+          >
+      </li>
+      </ul>
+      </div>
+    
+
+  </div>
+</div>
+
+<!-- <Br/> -->
+<!-- &nbsp;&nbsp; &nbsp;&nbsp;
+Enter your Answer  
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input [(ngModel)]='z' />
+&nbsp;&nbsp;&nbsp;&nbsp; <button (click)='enterAnswer()'>submit</button>
+<h6  class="text-success">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{title}} </h6  > -->
+
+
+  <form style="margin:140px;">
+    <div class="form-group">
+      
+      <input type="email" class="form-control" [(ngModel)]='z' name="z" aria-describedby="emailHelp" placeholder="Enter your Answer">
+      
+    </div>
+    
+    <button type="button" class="btn btn-danger" (click)="enterAnswer()" >Submit</button><Br/>
+    <p class="text-success" >{{title}} </p  ><p class="text-danger" >{{title1}} </p  >
+    
+  </form>
+
+</div>

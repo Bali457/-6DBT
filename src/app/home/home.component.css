@@ -1,0 +1,12 @@
+.example-button-row button,
+.example-button-row a {
+  margin-bottom: 8px;
+}
+
+mat-chip {
+  max-width: 200px;
+
+}
+
+
+

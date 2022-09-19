@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to QNA-FORUM!');
+    expect(page.getTitleText()).toEqual('Welcome to DOUBT-FORUM!');
   });
 
   afterEach(async () => {

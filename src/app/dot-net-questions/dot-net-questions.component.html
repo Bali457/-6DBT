@@ -1,0 +1,67 @@
+<div class="container">
+   
+  
+  <div class="card" style="margin-top:50px;margin-bottom:40px;margin-left:250px; margin-right:250px; box-shadow: 0 0 5px #00000045;">
+   
+    <div class="card-header"  >
+     <h2 class ="text-center"  style=" margin:-5px;  color:#d9534f"  >DOT NET</h2  >
+   </div>
+   
+ </div>
+ 
+
+ 
+  <div class="card" style="margin:30px; margin:140px; margin-top:10px; box-shadow: 0 0 5px #00000045;">
+   
+       <div class="card-header">
+         <b><span style="color:#d9534f">FREQUENTLY ASKED QUESTIONS</span></b>
+       </div>
+   
+       <div class="card-body">
+     
+          <div *ngFor="let mod of ques" >
+            <ul>
+              <li>
+                <a [routerLink]="['/answers',mod.qid,mod.question]" ><p> {{mod.question}}</p> </a>
+              </li>
+            </ul>
+          </div>
+ 
+       </div>
+  </div>
+ 
+ 
+  <form style="margin:140px; margin-top:-90px;">
+      
+    <div class="form-group">
+      
+      <input type="question" class="form-control" [(ngModel)]='textboxvalue' name="textboxvalue" aria-describedby="questionHelp" placeholder="Enter your question">
+      
+    </div>
+    
+    <button type="button" class="btn btn-danger" (click)="enterQuestion()" >Submit</button><Br/>
+    <p class="text-success" >{{title}} </p  >
+    <p class="text-danger" >{{title1}} </p  >
+    
+ </form>
+ 
+  <!-- <form style="margin:40px;">
+     
+     <div class="form-group">
+       
+       <input type="question" class="form-control" [(ngModel)]='y' name="y" aria-describedby="questionHelp" placeholder="Enter your question">
+       
+     </div>
+     
+     <button type="button" class="btn btn-danger" (click)="enterQuestion()" >Submit</button><Br/>
+     <p class="text-success" >{{title}} </p  >
+     <p class="text-danger" >{{title1}} </p  >
+     
+  </form> -->
+ 
+</div >
+
+<Br/><Br/><Br/><Br/><Br/><Br/>
+ 
+ 
+ 
